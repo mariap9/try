@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/mariap9/try/issues"
   },
-  "homepage": "https://github.com/mariap9/try#readme"
+  "homepage": "https://github.com/mariap9/try#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^2.3.0"
+  }
 }
