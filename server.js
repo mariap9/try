@@ -1,5 +1,3 @@
-// Based off of Shawn Van Every's Live Web
-// http://itp.nyu.edu/~sve204/liveweb_fall2013/week3.html
 
 // Using express: http://expressjs.com/
 var express = require('express');
@@ -19,7 +17,6 @@ function listen() {
 
 app.use(express.static('public'));
 
-
 // WebSocket Portion
 // WebSockets work with the HTTP server
 var io = require('socket.io')(server);
@@ -28,13 +25,12 @@ var io = require('socket.io')(server);
 // This is run for each individual user that connects
 io.sockets.on('connection',
   // We are given a websocket object in our function
-  function (socket) {
+  function(socket) {
 
     console.log("We have a new client: " + socket.id);
 
     // When this user emits, client side: socket.emit('otherevent',some data);
-    socket.on('mouse',
-      function(data) {
+    socket.on('mouse', function(data) {
         // Data comes in as whatever was sent, including objects
         console.log("Received: 'mouse' " + data.x + " " + data.y);
 
