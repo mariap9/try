@@ -19,7 +19,7 @@
   "homepage": "https://github.com/mariap9/try#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "mapbox-gl": "^1.7.0",
+    "mapbox-gl": "^1.13.3",
     "socket.io": "^2.3.0"
   },
   "devDependencies": {}
